@@ -18,6 +18,8 @@ MANDIR = /usr/share/man
 # variable needs to be -lcursesX, but probably all such systems support
 # the termcap routines (option 1) anyhow.
 # LIBS = -lcurses
+# LIBS = -lncurses
+# LIBS = -lncurses -ltinfo
 # TERMFLAG = -DMORE_TERMINFO
 
 # more option 2: use the termcap routines.  On some systems the LIBS
