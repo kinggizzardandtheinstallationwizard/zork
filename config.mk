@@ -13,19 +13,20 @@ MANDIR = /usr/share/man
 # uncommented.  If you have trouble, especially when linking, you may
 # have to select a different option.
 
-# more option 1: use the termcap routines.  On some systems the LIBS
+
+# more option 1: use the terminfo routines.  On some systems the LIBS
+# variable needs to be -lcursesX, but probably all such systems support
+# the termcap routines (option 1) anyhow.
+# LIBS = -lcurses
+# TERMFLAG = -DMORE_TERMINFO
+
+# more option 2: use the termcap routines.  On some systems the LIBS
 # variable may need to be set to -lcurses.  On some it may need to
 # be /usr/lib/termcap.o.  These options are commented out below.
 # LIBS = -ltermcap
 # TERMFLAG =
 # LIBS = -lcurses
 # LIBS = /usr/lib/termcap.o
-
-# more option 2: use the terminfo routines.  On some systems the LIBS
-# variable needs to be -lcursesX, but probably all such systems support
-# the termcap routines (option 1) anyhow.
-# LIBS = -lcurses
-# TERMFLAG = -DMORE_TERMINFO
 
 # more option 3: assume all terminals have 24 rows
 # LIBS =
